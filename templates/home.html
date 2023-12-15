@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.scss') }}">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 class="title"> <u>Honey Adulteration Detection</u> </h1><br>
+
+            <form method="POST" action="{{ url_for('home') }}" enctype="multipart/form-data">
+                <input type="file" name="csv_file" accept=".csv" id="fileInput" style="display:none">
+                <label for="fileInput">Choose CSV file</label><br><br>
+                <input type="submit" value="Predict!">
+            </form>
+
+            <img src="{{ url_for('static', filename='bee.gif') }}" class="shine">
+
+            {% if data is not none %}
+            <h1><u>Result :</u></h1>
+                {% if data == 0 %}
+                    <h1>&#8680; Honey <u>is not adulterated</u></h1>
+                    <img src="{{ url_for('static', filename='gif2.gif') }}" alt="Honey is not adulterated" class="result">
+                {% else %}
+                    <h1>&#8680; Honey <u>is adulterated</u></h1>
+                    <img src="{{ url_for('static', filename='gif1.gif') }}" alt="Honey is adulterated" class="result">
+                {% endif %}
+                <a href="{{ url_for('man') }}"><i>Attempt with different data.</i></a>
+            {% endif %}
+        </div>
+
+        <div class="copy">Jaouabi Oussama, Hamdi Helmi | IF5</div>
+    </body>
+</html>
