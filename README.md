@@ -39,7 +39,6 @@ Hyperspectral Imaging adulterated honey dataset :
 
 ```
 https://auckland.figshare.com/articles/dataset/Hyperspectral_Imaging_adulterated_honey_dataset/16441686/1
-
 ```
 
 A new honey adulteration detection approach using hyperspectral imaging and machine learning :
