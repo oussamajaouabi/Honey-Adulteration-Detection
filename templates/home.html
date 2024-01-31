@@ -8,12 +8,12 @@
             <h1 class="title"> <u>Honey Adulteration Detection</u> </h1><br>
 
             <form method="POST" action="{{ url_for('home') }}" enctype="multipart/form-data">
-                <input type="file" name="csv_file" accept=".csv" id="fileInput" style="display:none">
+                <input type="file" name="csv_file" accept=".csv" id="fileInput">
                 <label for="fileInput">Choose CSV file</label><br><br>
                 <input type="submit" value="Predict!">
             </form>
 
-            <img src="{{ url_for('static', filename='bee.gif') }}" class="shine">
+            <img src="{{ url_for('static', filename='bee.gif') }}" class="bee">
 
             {% if data is not none %}
             <h1><u>Result :</u></h1>

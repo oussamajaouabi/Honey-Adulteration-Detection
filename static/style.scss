@@ -8,59 +8,107 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0px;
-}
 
-.container {
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.875) 0%, rgba(255, 149, 0, 0.875) 100%);
-    animation: degradeBackground 5s infinite alternate;
-    padding-top: 8em;
-    width: 40%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-
-    h1 {
+    .container {
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.875) 0%, rgba(255, 149, 0, 0.875) 100%);
+        animation: degradeBackground 5s infinite alternate;
+        padding-top: 8em;
+        width: 40%;
+        height: 100%;
+        margin: 0 auto;
         text-align: center;
-        font-size: 40px;
+        position: relative;
+    
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+    
+        .title {
+            color: #5f2806;
+            width: 50%;
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 50px;
+        }
+    
+        form {
+            padding: 20px;
+            display: inline-block;
+    
+            input[type="submit"] {
+                font-family: 'Croissant One';
+                background-color: #DE781F;
+                color: #000;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            
+            input[type="submit"]:hover {
+                background-color: #f09647;
+            }
+            
+            input[type="file"] {
+                display: none;
+            }
+    
+            label {
+                background-color: #f09647;
+                color: #000;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            
+            label:hover {
+                background-color: #DE781F;
+            }
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .bee {
+            width: 8%;
+            animation: rotate 4s linear infinite alternate;
+        }
+        
+        .result {
+            width: 15%;
+            border: #fff solid 3px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #5f2806;
+            font-size: 16px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        
+        a:hover {
+            color: #7f370b;
+        }
+    
+        .copy {
+            font-family: 'Poppins';
+            font-size: 15px;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
-
-    .title {
-        color: #5f2806;
-        width: 50%;
-        display: block;
-        margin: 0px auto;
-        margin-bottom: 50px;
-    }
-
-    form {
-        padding: 20px;
-        display: inline-block;
-    }
-}
-
-/*@keyframes degradeBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}*/
-
-img {
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.shine {
-    width: 8%;
-    animation: rotate 4s linear infinite alternate;
-}
-
-.result{
-    width: 15%;
-    border: #fff solid 3px;
 }
 
 @keyframes rotate {
@@ -70,67 +118,4 @@ img {
     100% {
         transform: rotate(-5deg);
     }
-}
-
-input[type="submit"] {
-    font-family: 'Croissant One';
-    background-color: #DE781F;
-    color: #000;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #f09647;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-label {
-    background-color: #f09647;
-    color: #000;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-label:hover {
-    background-color: #DE781F;
-}
-
-a {
-    display: block;
-    text-decoration: none;
-    color: #5f2806;
-    font-size: 16px;
-    margin-top: 50px;
-    cursor: pointer;
-}
-
-a:hover {
-    color: #7f370b;
-}
-
-span {
-    position: absolute;
-    margin-left: 5px;
-    margin-bottom: 5.5px;
-}
-
-.copy {
-    font-family: 'Poppins';
-    font-size: 15px;
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
 }
