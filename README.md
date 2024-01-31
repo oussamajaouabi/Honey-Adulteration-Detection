@@ -6,12 +6,12 @@
 - It examines how light behaves in the target and recognizes materials based on their different spectral signatures.
 - Spectrum describes the amount of light in different wavelengths.
   
-![image](https://github.com/oussamajaouabi/Honey-Adulteration-Detection/assets/96437883/f522b1b2-2ca6-4478-bc47-276fb82683ba)
+![image](https://github.com/oussamajaouabi/Honey-Adulteration-Detection/assets/96437883/df93ac61-b758-4502-a21d-6e111529da56)
 
 - Hyperspectral Imaging is an analytical technique based on spectroscopy. It collects hundreds of images at different wavelengths for the same spatial area.
 - Each material possesses a specific spectral signature that can be employed as a ‘fingerprint’ for its unique identification.
 
-![image](https://github.com/oussamajaouabi/Honey-Adulteration-Detection/assets/96437883/e339b189-68c5-4eb4-877a-273ec6d4cb33)
+![image](https://github.com/oussamajaouabi/Honey-Adulteration-Detection/assets/96437883/c2b72f5b-b637-4db8-a182-ed6a4d4c2ff2)
 
 - Hyperspectral imaging is employed in different fields such as :
   - astronomy,
